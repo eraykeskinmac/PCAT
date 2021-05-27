@@ -1,0 +1,26 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "PCAT Photo App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eraykeskinmac/PCAT.git"
+  },
+  "keywords": [
+    "photo",
+    "app"
+  ],
+  "author": "Mustafa Eray Keskin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eraykeskinmac/PCAT/issues"
+  },
+  "homepage": "https://github.com/eraykeskinmac/PCAT#readme",
+  "devDependencies": {
+    "prettier": "2.3.0"
+  }
+}
