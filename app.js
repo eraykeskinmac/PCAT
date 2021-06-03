@@ -13,7 +13,7 @@ const app = express();
 
 // connect DB
 mongoose.connect(
-  'mongodb+srv://eraykeskin:eray123@cluster0.2he0g.mongodb.net/pcat-test-db',
+  'mongodb+srv://eraykeskin:eray123@cluster0.2he0g.mongodb.net/pcat-db?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -46,7 +46,7 @@ app.get('/about', pageController.getAboutPage);
 app.get('/add', pageController.getAddPage);
 app.get('/photos/edit/:id', pageController.getEditPage);
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Sunucu ${port} portunda başlatıldı..`);
 });
